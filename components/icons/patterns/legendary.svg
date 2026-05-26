@@ -1,0 +1,122 @@
+<svg viewBox="0 0 400 252" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="80%">
+      <stop offset="0%" stop-color="#3d1a00"/>
+      <stop offset="55%" stop-color="#1e0d00"/>
+      <stop offset="100%" stop-color="#080400"/>
+    </radialGradient>
+    <radialGradient id="burst" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#d97706" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#fbbf24" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <radialGradient id="fire1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="fireglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="252" fill="url(#bg)"/>
+  <rect width="400" height="252" fill="url(#burst)"/>
+
+  <!-- Golden rays from center-top -->
+  <g opacity="0.55" stroke-width="1.5" fill="none">
+    <line x1="200" y1="105" x2="0" y2="0" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="40" y2="0" stroke="#f59e0b"/>
+    <line x1="200" y1="105" x2="80" y2="0" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="120" y2="0" stroke="#d97706"/>
+    <line x1="200" y1="105" x2="160" y2="0" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="200" y2="0" stroke="#fef3c7"/>
+    <line x1="200" y1="105" x2="240" y2="0" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="280" y2="0" stroke="#d97706"/>
+    <line x1="200" y1="105" x2="320" y2="0" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="360" y2="0" stroke="#f59e0b"/>
+    <line x1="200" y1="105" x2="400" y2="0" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="0" y2="40" stroke="#d97706"/>
+    <line x1="200" y1="105" x2="0" y2="90" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="0" y2="140" stroke="#f59e0b"/>
+    <line x1="200" y1="105" x2="0" y2="190" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="0" y2="252" stroke="#d97706"/>
+    <line x1="200" y1="105" x2="400" y2="40" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="400" y2="90" stroke="#d97706"/>
+    <line x1="200" y1="105" x2="400" y2="140" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="400" y2="190" stroke="#f59e0b"/>
+    <line x1="200" y1="105" x2="400" y2="252" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="60" y2="252" stroke="#d97706"/>
+    <line x1="200" y1="105" x2="140" y2="252" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="200" y2="252" stroke="#fef3c7"/>
+    <line x1="200" y1="105" x2="260" y2="252" stroke="#fbbf24"/>
+    <line x1="200" y1="105" x2="340" y2="252" stroke="#d97706"/>
+  </g>
+
+  <!-- Concentric rings -->
+  <g fill="none" stroke-opacity="0.2">
+    <circle cx="200" cy="105" r="35" stroke="#fbbf24" stroke-width="1"/>
+    <circle cx="200" cy="105" r="60" stroke="#f59e0b" stroke-width="0.8"/>
+    <circle cx="200" cy="105" r="90" stroke="#fbbf24" stroke-width="0.7"/>
+    <circle cx="200" cy="105" r="125" stroke="#d97706" stroke-width="0.6"/>
+    <circle cx="200" cy="105" r="165" stroke="#fbbf24" stroke-width="0.5"/>
+  </g>
+
+  <!-- Scattered diamonds -->
+  <g fill-opacity="0.8" filter="url(#fireglow)">
+    <polygon points="200,68 212,80 200,92 188,80" fill="#fef3c7" fill-opacity="0.95"/>
+    <polygon points="130,50 138,58 130,66 122,58" fill="#fbbf24" fill-opacity="0.7"/>
+    <polygon points="270,50 278,58 270,66 262,58" fill="#fbbf24" fill-opacity="0.7"/>
+    <polygon points="80,130 87,137 80,144 73,137" fill="#f59e0b" fill-opacity="0.6"/>
+    <polygon points="320,130 327,137 320,144 313,137" fill="#f59e0b" fill-opacity="0.6"/>
+    <polygon points="155,160 161,166 155,172 149,166" fill="#fbbf24" fill-opacity="0.55"/>
+    <polygon points="245,160 251,166 245,172 239,166" fill="#fbbf24" fill-opacity="0.55"/>
+    <polygon points="40,200 46,206 40,212 34,206" fill="#d97706" fill-opacity="0.5"/>
+    <polygon points="360,200 366,206 360,212 354,206" fill="#d97706" fill-opacity="0.5"/>
+    <polygon points="200,210 207,217 200,224 193,217" fill="#f59e0b" fill-opacity="0.6"/>
+  </g>
+
+  <!-- Core burst -->
+  <circle cx="200" cy="105" r="28" fill="url(#fire1)" filter="url(#softglow)"/>
+  <circle cx="200" cy="105" r="14" fill="#fbbf24" fill-opacity="0.9" filter="url(#glow)"/>
+  <circle cx="200" cy="105" r="7" fill="#fef3c7" filter="url(#glow)"/>
+
+  <!-- Fire wisps at bottom -->
+  <g fill-opacity="0.35" filter="url(#fireglow)">
+    <ellipse cx="140" cy="240" rx="20" ry="10" fill="#f59e0b"/>
+    <ellipse cx="200" cy="245" rx="25" ry="8" fill="#fbbf24"/>
+    <ellipse cx="260" cy="240" rx="20" ry="10" fill="#f59e0b"/>
+    <ellipse cx="90" cy="235" rx="15" ry="7" fill="#d97706"/>
+    <ellipse cx="310" cy="235" rx="15" ry="7" fill="#d97706"/>
+  </g>
+
+  <!-- Gold dust particles -->
+  <g fill="#fbbf24" fill-opacity="0.6">
+    <circle cx="55" cy="20" r="1.5"/><circle cx="345" cy="20" r="1.5"/>
+    <circle cx="25" cy="170" r="1.5"/><circle cx="375" cy="170" r="1.5"/>
+    <circle cx="110" cy="220" r="1.5"/><circle cx="290" cy="220" r="1.5"/>
+    <circle cx="170" cy="30" r="1"/><circle cx="230" cy="30" r="1"/>
+    <circle cx="100" cy="80" r="1"/><circle cx="300" cy="80" r="1"/>
+    <circle cx="60" cy="170" r="1"/><circle cx="340" cy="170" r="1"/>
+  </g>
+
+  <!-- Vignette -->
+  <radialGradient id="vign" cx="50%" cy="50%" r="70%">
+    <stop offset="40%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#000" stop-opacity="0.55"/>
+  </radialGradient>
+  <rect width="400" height="252" fill="url(#vign)"/>
+</svg>

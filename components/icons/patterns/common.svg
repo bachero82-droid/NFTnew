@@ -1,0 +1,74 @@
+<svg viewBox="0 0 400 252" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8c8d8"/>
+      <stop offset="40%" stop-color="#8a9eb4"/>
+      <stop offset="100%" stop-color="#3a4a5a"/>
+    </linearGradient>
+    <pattern id="hatch" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="10" y1="0" x2="10" y2="20" stroke="#c8d8e8" stroke-width="1.5" stroke-opacity="0.55"/>
+    </pattern>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="#6a8aaa" stroke-width="0.5" stroke-opacity="0.3"/>
+    </pattern>
+    <radialGradient id="shine" cx="30%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#e8f2ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.0"/>
+    </radialGradient>
+    <radialGradient id="vign" cx="50%" cy="50%" r="70%">
+      <stop offset="30%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#0a1520" stop-opacity="0.65"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="252" fill="url(#bg)"/>
+  <rect width="400" height="252" fill="url(#hatch)"/>
+  <rect width="400" height="252" fill="url(#grid)"/>
+
+  <!-- Brushed horizontal streaks -->
+  <rect x="0" y="0" width="400" height="1.5" fill="#d0e0f0" fill-opacity="0.18"/>
+  <rect x="0" y="8" width="400" height="1" fill="#d0e0f0" fill-opacity="0.10"/>
+  <rect x="0" y="18" width="400" height="1.5" fill="#d0e0f0" fill-opacity="0.15"/>
+  <rect x="0" y="30" width="400" height="1" fill="#d0e0f0" fill-opacity="0.08"/>
+  <rect x="0" y="44" width="400" height="2" fill="#d0e0f0" fill-opacity="0.12"/>
+  <rect x="0" y="60" width="400" height="1" fill="#d0e0f0" fill-opacity="0.09"/>
+  <rect x="0" y="80" width="400" height="1.5" fill="#d0e0f0" fill-opacity="0.14"/>
+  <rect x="0" y="104" width="400" height="1" fill="#d0e0f0" fill-opacity="0.07"/>
+  <rect x="0" y="130" width="400" height="2" fill="#d0e0f0" fill-opacity="0.10"/>
+  <rect x="0" y="158" width="400" height="1" fill="#d0e0f0" fill-opacity="0.09"/>
+  <rect x="0" y="180" width="400" height="1.5" fill="#d0e0f0" fill-opacity="0.13"/>
+  <rect x="0" y="200" width="400" height="1" fill="#d0e0f0" fill-opacity="0.08"/>
+  <rect x="0" y="218" width="400" height="2" fill="#d0e0f0" fill-opacity="0.11"/>
+  <rect x="0" y="234" width="400" height="1" fill="#d0e0f0" fill-opacity="0.07"/>
+  <rect x="0" y="248" width="400" height="1.5" fill="#d0e0f0" fill-opacity="0.15"/>
+
+  <!-- Top-left corner accent -->
+  <polygon points="0,0 160,0 0,160" fill="#d8ecff" fill-opacity="0.09"/>
+  <!-- Bottom-right corner accent -->
+  <polygon points="400,252 240,252 400,92" fill="#0a1828" fill-opacity="0.18"/>
+
+  <!-- Inner frame -->
+  <rect x="14" y="14" width="372" height="224" rx="10" fill="none" stroke="#b0c8e0" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="22" y="22" width="356" height="208" rx="7" fill="none" stroke="#8aaac8" stroke-width="0.6" stroke-opacity="0.3"/>
+
+  <!-- Cross marks -->
+  <g stroke="#c8dff0" stroke-width="1.8" stroke-opacity="0.6" filter="url(#glow)">
+    <line x1="345" y1="35" x2="365" y2="35"/><line x1="355" y1="25" x2="355" y2="45"/>
+    <line x1="35" y1="217" x2="55" y2="217"/><line x1="45" y1="207" x2="45" y2="227"/>
+    <line x1="345" y1="217" x2="365" y2="217"/><line x1="355" y1="207" x2="355" y2="227"/>
+  </g>
+
+  <!-- Diamond accents -->
+  <polygon points="200,18 208,26 200,34 192,26" fill="#c0d8f0" fill-opacity="0.5"/>
+  <polygon points="200,218 207,225 200,232 193,225" fill="#7090b0" fill-opacity="0.4"/>
+
+  <!-- Horizontal center line -->
+  <line x1="14" y1="126" x2="386" y2="126" stroke="#90b0cc" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <rect width="400" height="252" fill="url(#shine)"/>
+  <rect width="400" height="252" fill="url(#vign)"/>
+</svg>
